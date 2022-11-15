@@ -1,0 +1,12 @@
+@mixin btn($pad) {
+  padding: $pad;
+  background-color: $pink;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $navy;
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- styles -->
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <!-- IconScout  -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Snake Game</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- Information Screen -->
+        <div class="info">
+          <div class="info_img">
+            <img src="/img/logo.svg" class="logo-img" height="450px" />
+          </div>
+          <div class="info_title">
+            <h1>
+              Classic Snake Game
+            </h1>
+            <ul class="social_links">
+              <li>
+                <i class="uil uil-envelope-alt"></i>
+                <a href="mailto:pavanh2020@gmail.com">pavanh2020@gmail.com</a> 
+              </li>
+              <li>
+                <i class="uil uil-linkedin-alt"></i>
+                <span><a href="https://linkedin.com/in/pavan-h">linkedin</a></span>
+              </li>
+              <li>
+                <i class="uil uil-github-alt"></i>
+                <a href="https://github.com/pavan-h">pavan-h</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Main Screen -->
+        <div class="main_screen">
+          <!-- Welcome Screen  -->
+          <div class="intro" id="intro">
+            <div class="intro_screen">
+              <h1>Snake Game</h1>
+              <p>
+                The moment the snake slams against one of the box's four walls
+                or itself, the game is ended.
+              </p>
+              <h4>Game Controls</h4>
+              <ul>
+                <li>Up-Arrow - Move Upwords</li>
+                <li>Down-Arrow - Move Downwords</li>
+                <li>Left-Arrow - Move Left</li>
+                <li>Right-Arrow - Move Right</li>
+              </ul>
+            </div>
+            <div class="intro_btn">
+              <button class="btn">Play Now</button>
+            </div>
+          </div>
+
+          <!-- Game Screen / Field  -->
+          <div class="game" id="game">
+            <div class="game_score_board">
+              <div class="scores">
+                <h4>
+                  <i class="uil uil-trophy"></i>
+                  <span class="score">Score</span>
+                </h4>
+              </div>
+              <div class="restart">
+                <button class="restart_btn">Replay</button>
+              </div>
+            </div>
+           <div class="game_area" id="game_area"></div>
+          </div>
+      </div>
+    </main>
+
+    <script src="/src/app.js"></script>
+  </body>
+</html>
